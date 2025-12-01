@@ -1,5 +1,5 @@
 const GEMINI_API_KEY = "AIzaSyCfTtTdfeEcs5xYRQSynvoWRUvVsHgeyCc";  // 🔥 PON TU API KEY AQUÍ
-const GEMINI_MODEL = "gemini-2.0-flash";
+const GEMINI_MODEL = "gemini-2.5-flash";
 
 const fileInput = document.getElementById("fileInput");
 const preview = document.getElementById("preview");
@@ -120,4 +120,5 @@ function fileToBase64(file) {
     reader.readAsDataURL(file);
   });
 }
+
 

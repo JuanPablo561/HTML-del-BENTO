@@ -1,0 +1,134 @@
+* { box-sizing: border-box; font-family: system-ui, sans-serif; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  color: #e5e7eb;
+}
+
+/* Tarjeta principal estilo DarkUI */
+.card {
+  background: #111214;
+  border-radius: 20px;
+  padding: 24px 20px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  border: 1px solid #2a2d31;
+}
+
+.title { 
+  font-size: 1.4rem; 
+  font-weight: 700; 
+  margin-bottom: 8px; 
+  color: #cbd5e1;
+}
+
+.subtitle { 
+  font-size: 0.9rem; 
+  color: #94a3b8; 
+  margin-bottom: 16px; 
+}
+
+/* Caja de carga */
+.upload-box {
+  border: 1px dashed #4d5562;
+  border-radius: 16px;
+  padding: 14px;
+  text-align: center;
+  background: #181a1d;
+  margin-bottom: 16px;
+}
+
+.upload-box input[type="file"] { display: none; }
+
+/* Botón de seleccionar imagen (antes azul brillante) */
+.upload-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: #1f2937;      /* gris oscuro */
+  color: #cbd5e1;           /* texto gris claro */
+  cursor: pointer;
+  font-weight: 600;
+  border: 1px solid #374151; /* borde leve */
+}
+
+.upload-label:hover {
+  background: #2a3342;
+}
+
+.preview img {
+  max-width: 100%;
+  max-height: 200px;
+  margin-top: 12px;
+  border-radius: 12px;
+}
+
+/* Botón principal (antes verde) → ahora DarkUI */
+.btn {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+
+  background: #2d2f33;     /* gris oscuro */
+  color: #e5e7eb;
+  transition: 0.15s ease;
+}
+
+.btn:hover {
+  background: #3a3c41;     /* hover gris un poco más claro */
+}
+
+.status { 
+  margin-top: 10px; 
+  font-size: 0.85rem; 
+  color: #9ecbff;          /* azul tenue tipo ChatGPT */
+}
+
+/* Resultado */
+.result {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 14px;
+  background: #1a1b1f;
+  border: 1px solid #2a2d31;
+  display: none;
+}
+
+.result h3 { 
+  margin: 0 0 8px; 
+  color: #cbd5e1;
+}
+
+/* Texto del bote sugerido (antes verde fosfo) */
+.bucket-highlight { 
+  font-weight: bold; 
+  color: #9ecbff; /* azul pastel elegante */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+/* Imagen del personaje 3D feliz */
+.character {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  display: block;
+}
